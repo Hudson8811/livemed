@@ -1,0 +1,96 @@
+extends layout
+block variables
+    - var body_class = 'white-bg'
+block content
+    section.container.h-section-1
+        .h-section-1__inner
+            .h-section-1__content
+                h1.h1 Virtual health care, made simple and affordable
+                .h-section-1__text Connect with a live doctor when you need it most.
+                .h-section-1__btns
+                    a.btn(href="") Connect to a Doctor
+                    a.h-section-1__how-btn.svg-link--stroke
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 8L16 12L10 16V8Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        | How it Works
+            .h-section-1__image
+                img(src="/new/images/home-first-img.svg" alt="")
+
+    section.container.h-section-2
+        .h-section-2__inner
+            .h-section-2__item
+                .h-section-2__img
+                    img(src="/new/images/icon-home-lock.svg" alt="")
+                .h-section-2__title.h4 Security you can <br>afford
+                .h-section-2__text.p Get the assurance you need without unnecessary and expensive doctor appointments.
+            .h-section-2__item
+                .h-section-2__img
+                    img(src="/new/images/icon-home-smartphone.svg" alt="")
+                .h-section-2__title.h4 Convenience you deserve
+                .h-section-2__text.p The care you need when you need it. Access care from anywhere, anytime.
+            .h-section-2__item
+                .h-section-2__img
+                    img(src="/new/images/icon-home-home.svg" alt="")
+                .h-section-2__title.h4 Stay home, stay <br>safe
+                .h-section-2__text.p Stay home and avoid crowded offices full of contagious people who are unwell.
+            .h-section-2__item
+                .h-section-2__img
+                    img(src="/new/images/icon-home-like.svg" alt="")
+                .h-section-2__title.h4 Affordable alternative to insurance
+                .h-section-2__text.p Convenient access to healthcare at a fraction of health insurance company costs.
+
+    section.h-section-3
+        .h-section-3__inner.container
+            .h-section-3__content
+                .h-section-3__title.h2.center Convenient and <br>reliable healthcare
+                .h-section-3__subtitle.center Let us help you feel better. Discover telehealth services.
+                .h-section-3__video
+                    video(poster="/new/images/video-bg.png" )
+                        source(src="//s3.us-east-2.amazonaws.com/livemedconnect/video-home.webm" type="video/webm")
+                        source(src="images/video-home.mp4" type="video/mp4")
+                        | Your browser does not support HTML5 video.
+                    .h-section-3__video-btn
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 3L20 12L6 21V3Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                .h-section-3__text.p.center Whether you’re suffering from a sinus infection or an unusual rash, we’ve got your health covered from A to Z. Get the level of care you deserve when you need it most on your terms.
+
+    section.container.h-section-4
+        .h-section-4__inner
+            .h-section-4__title.h2.center Benefits of LiveMedConnect
+            .h-section-4__items
+                .hs4-item
+                    .hs4-item__image
+                        img(src="/new/images/home-benefit-1.png" alt="")
+                    .hs4-item__content
+                        .hs4-item__title.h3 Visiting family or traveling abroad? Wherever you are...
+                        .hs4-item__text.p Out of town? No problem. Get a doctor on call without an appointment or sitting in crowded waiting rooms.
+                        a.hs4-item__link.svg-link--stroke.blue-link(href="")
+                            | Connect to a Doctor
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 18L15.5 12L9.5 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                .hs4-item
+                    .hs4-item__image
+                        img(src="/new/images/home-benefit-2.png" alt="")
+                    .hs4-item__content
+                        .hs4-item__title.h3 Get a refill without leaving home.
+                        .hs4-item__text.p Get short-term prescriptions sent to your pharmacy of choice electronically.
+                        a.hs4-item__link.svg-link--stroke.blue-link(href="")
+                            | Get My Prescriptions
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 18L15.5 12L9.5 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                .hs4-item
+                    .hs4-item__image
+                        img(src="/new/images/home-benefit-3.png" alt="")
+                    .hs4-item__content
+                        .hs4-item__title.h3 Get a consultation without the wait.
+                        .hs4-item__text.p Need a second opinion on lab results or have a health related question? Get your own concierge team of experts to answer your questions.
+                        a.hs4-item__link.svg-link--stroke.blue-link(href="")
+                            | Ask a Question
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 18L15.5 12L9.5 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    section.container.h-section-5
+        .h-section-5__inner
+            .h-section-5__title.h2.center Interested in telemedicine? <br>Learn more about LiveMedConnect
+
+
