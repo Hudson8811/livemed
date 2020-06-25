@@ -64,3 +64,22 @@
     }
 }
 
+.as-3 {
+    &__inner {
+        background: #112440;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 552px;
+    }
+
+    &__content {
+        color: #ffffff;
+        display: flex;
+    }
+}
+
