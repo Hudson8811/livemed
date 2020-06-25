@@ -1,8 +1,39 @@
 extends layout
 block variables
-    - var body_class = 'white-bg'
+  - var body_class = 'white-bg'
 block content
-    section
-        .container About
+  section.as-1(style="background-image:url(/new/images/about-img-1.jpg);")
+    header.header.container.white-header
+      .header__inner
+        a.header__logo(href="/")
+          img(src="/new/images/logo-white.svg" alt="logo")
+        .header__navigation
+          nav.header__menu
+            a.active(href="") About
+            a(href="") Help Center
+            a(href="") Pricing
+            a(href="") Contact
+          .header__btns
+            a.btn-small Get Started
+            a.header__login.svg-link--stroke
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 17L15 12L10 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 12H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              | Login
 
+    .container.as-1__content
+        .as-1__subtitle.center By real people. for real People.
+        .as-1__title.h1.center You deserve transparent <br>and reliable health care
 
+  section.as-2.container
+    .h-section-3__video.as-2__video
+      video(poster="/new/images/video-bg.png" )
+        source(src="//s3.us-east-2.amazonaws.com/livemedconnect/video-home.webm" type="video/webm")
+        source(src="images/video-home.mp4" type="video/mp4")
+        | Your browser does not support HTML5 video.
+      .h-section-3__video-btn
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 3L20 12L6 21V3Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>

@@ -27,6 +27,7 @@ module.exports = function styles() {
     }))
     .pipe(shorthand())
     .pipe(cleanCSS({
+      rebase: false,
       debug: true,
       compatibility: '*'
     }, details => {
