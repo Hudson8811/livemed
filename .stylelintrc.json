@@ -10,11 +10,8 @@
   "rules": {
     "indentation": 4,
     "at-rule-no-vendor-prefix": true,
-    "at-rule-empty-line-before": "always",
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/at-import-partial-extension": "never",
-    "block-closing-brace-newline-before": "always",
-    "block-closing-brace-newline-after": "always",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
     "at-rule-semicolon-newline-after": "always",
@@ -28,7 +25,8 @@
       "vh",
       "vm",
       "vmax",
-      "vmin"
+      "vmin",
+      "deg"
     ]
   }
 }
