@@ -3073,6 +3073,7 @@ if ($('.as-2__video').length > 0) {
 
 
 $(document).ready(function(){
+    plansSlider = undefined;
     if ($(window).width() <= 768)
         plansSlider = $('.plans').slick({
             arrows: false,
