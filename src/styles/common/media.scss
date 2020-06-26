@@ -209,6 +209,23 @@
     .f-contact__text {
         text-align: center;
     }
+
+    .pagetitle {
+        padding: 80px 0;
+
+        &__blue-text {
+            margin-top: -32px;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+        &__subtitle {
+            margin-top: 24px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {

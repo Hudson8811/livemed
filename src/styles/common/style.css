@@ -366,3 +366,22 @@ body.gray_bg{
 .footer__terms a:hover{
     color: #00AED5;
 }
+
+.pagetitle {
+    padding: 80px 24px 72px;
+    width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.pagetitle__blue-text {
+    color: #00AED5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.pagetitle__subtitle {
+    margin-top: 32px;
+}
