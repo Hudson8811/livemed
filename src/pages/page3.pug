@@ -1,11 +1,37 @@
 extends layout
-
+block variables
+    - var body_class = 'gray_bg'
 block content
-    section
-        .container Pricing
-
-
-
+    section.pagetitle
+        .pagetitle__blue-text.center Pricing
+        h1.pagetitle__title.h1.center Peace of mind that doesn’t break the bank
+        .pagetitle__subtitle.h4.center Choose a monthly plan
+    section.ps-1.container
+        .ps-1__content
+            .ps-1__plans.plans
+                .plan
+                    .plan__title.plan__title--blue
+                        img(src="/new/images/icon-plan-individual.svg" alt="")
+                        | Individual plan
+                    .plan__price
+                        span.h3 $24.95/mo
+                    .plan__text.p.center Consultations <br>for One
+                    a(href="").plan__btn.btn-small Select This Monthly Plan
+                .plan
+                    .plan__title.plan__title--green
+                        img(src="/new/images/icon-plan-individual.svg" alt="")
+                        | Family plan
+                    .plan__price
+                        span.red.h4 $39.95
+                        span.h3 $29.95/mo
+                    .plan__text.p.center Consultations for Family <br>up to 5 Members
+                    a(href="").plan__btn.btn-small Select This Monthly Plan
+            .ps-5__list.checklist
+                .checklist__item Unlimited Medical Consultations — 24/7/365 Nationwide Doctor Access
+                .checklist__item Prescriptions sent to pharmacy of choice electronically*
+                .checklist__item Mental Health Specialists 24/7/365 Access to Master Level Therapist
+                .checklist__item Care Navigation Advocates
+                .checklist__item Message a Specialist — Consult with specialist via Secure Messaging
 
 	section.schedule-first-visit-section
 		.container.container--scfivi
@@ -16,4 +42,3 @@ block content
 					a.btn.btn--scfivi-connect(href="") Connect to a Doctor
 				.scfivi-flex__phone
 					img(src="new/images/first-visit-pic.png", alt="")
-

@@ -1,0 +1,14 @@
+.ps-1 {
+    &__content {
+        max-width: 752px;
+        margin: 0 auto;
+    }
+}
+
+.ps-2 {
+    margin-top: 240px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 120px;
+    }
+}

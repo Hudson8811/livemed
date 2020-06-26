@@ -2,3 +2,28 @@
 //=require './slick.js'
 //=require './page1.js'
 //=require './page8.js'
+
+
+$(document).ready(function(){
+    $('.hm__burger').on('click', function () {
+        event.preventDefault();
+        $('.header__navigation').addClass('active');
+        $('body, .header').addClass('menu-open');
+        $('body').prepend('<div class="hm__bg"></div>');
+
+        $('.hm__bg').on('click', function () {
+            event.preventDefault();
+            $('.header__navigation').removeClass('active');
+            $('body, .header').removeClass('menu-open');
+            $('.hm__bg').remove();
+        });
+    });
+
+    $('.hm__close').on('click', function () {
+        event.preventDefault();
+        $('.header__navigation').removeClass('active');
+        $('body, .header').removeClass('menu-open');
+        $('.hm__bg').remove();
+    });
+
+});

@@ -26,3 +26,29 @@ if ($('.as-2__video').length > 0) {
         video.play();
     });
 }
+
+
+$(document).ready(function(){
+    plansSlider = undefined;
+    if ($(window).width() <= 768)
+        plansSlider = $('.plans').slick({
+            arrows: false,
+            dots: true,
+        });
+
+    $(window).on('resize', function(){
+        if ($(window).width() <= 768){
+            if (!plansSlider) {
+                plansSlider = $('.plans').slick({
+                    arrows: false,
+                    dots: true,
+                });
+            }
+        } else {
+            if (plansSlider) {
+                $('.plans').slick('unslick');
+                plansSlider = undefined;
+            }
+        }
+    });
+});
