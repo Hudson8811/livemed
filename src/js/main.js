@@ -8,11 +8,13 @@ $(document).ready(function(){
     $('.hm__burger').on('click', function () {
         event.preventDefault();
         $('.header__navigation').addClass('active');
+        $('body, .header').addClass('menu-open');
         $('body').prepend('<div class="hm__bg"></div>');
 
         $('.hm__bg').on('click', function () {
             event.preventDefault();
             $('.header__navigation').removeClass('active');
+            $('body, .header').removeClass('menu-open');
             $('.hm__bg').remove();
         });
     });
@@ -20,6 +22,7 @@ $(document).ready(function(){
     $('.hm__close').on('click', function () {
         event.preventDefault();
         $('.header__navigation').removeClass('active');
+        $('body, .header').removeClass('menu-open');
         $('.hm__bg').remove();
     });
 

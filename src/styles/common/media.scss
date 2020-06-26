@@ -6,6 +6,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+    body {
+        &.menu-open {
+            overflow: hidden;
+        }
+    }
+
     .header {
         padding: 18px 24px;
     }
@@ -26,6 +32,7 @@
         box-shadow: 0 25px 25px rgba(100, 109, 134, 0.25);
         height: 100vh;
         transition: 0.3s ease;
+        overflow: auto;
 
         &:not(.active) {
             left: -296px;
@@ -42,6 +49,11 @@
 
         a {
             margin: 0;
+            color: #112440 !important;
+
+            &:hover {
+                color: #00AED5 !important;
+            }
 
             + a {
                 margin-top: 24px;
@@ -74,7 +86,7 @@
         font-size: 16px;
         line-height: 24px;
         text-align: center;
-        color: #112440;
+        color: #112440 !important;
         border: 2px solid #112440;
         border-radius: 100px;
         cursor: pointer;
@@ -91,7 +103,7 @@
 
         &:hover {
             background: #112440;
-            color: #fff;
+            color: #fff !important;
         }
     }
 
@@ -131,6 +143,19 @@
             top: 0;
             background: #112440;
             opacity: 0.1;
+        }
+    }
+
+    .white-header {
+        &.menu-open {
+            position: static;
+        }
+
+        .hm {
+            &__burger,
+            &__phone {
+                color: #ffffff;
+            }
         }
     }
 }
