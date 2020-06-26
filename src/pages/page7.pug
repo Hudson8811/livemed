@@ -2,6 +2,22 @@ extends layout
 block variables
 	- var body_class = 'white-bg'
 block content
-	section
-		.container Contact
+	section.contact-section
+		.container
+			.contact-flex
+				.contact-flex__left
+					.contact-flex__pic-wrap
+						img.contact-flex__pic(src="", alt="")
+						img.contact-flex__art-1(src="", alt="")
+						img.contact-flex__art-2(src="", alt="")
+						img.contact-flex__art-3(src="", alt="")
 
+				.contact-flex__right
+					h1.contacts-page-title Let’s talk
+					.contacts-page-description 	Access the care you need from anywhere whether you are at home or traveling. Save time and money by avoiding unnecessary and expensive emergency room or urgent care visits. Get the peace of mind that you have a Doctor on call 24/7. Contact us now to learn more. Someone from our team will get back to you as soon as possible.
+					form(action="")
+						input.textinp(type="text", name="" placeholder="Your Name")
+						input.textinp(type="text", name="" placeholder="Email Address")
+						input.textinp(type="text", name="" placeholder="Phone Number")
+						textarea.textinp.textinp--textarea(name="", cols="30", rows="10" placeholder="Your Message")
+						button.btn I want to chat
