@@ -169,6 +169,13 @@
     flex-direction: row-reverse;
 }
 .hs4-item:nth-child(3) {}
+
+
+
+
+/*--------------------------*/
+
+
 .h-section-5 {
     margin-top: 240px;
 }
@@ -308,4 +315,5 @@
 .subscribe-inp-email {
     padding-left: 40px;
 }
-.btn.subscribe-btn-submit {}
+.subscribe-btn-submit {
+    background: #112440;}
