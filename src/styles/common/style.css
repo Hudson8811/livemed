@@ -97,6 +97,7 @@ body.gray_bg{
     transition: color .2s linear, background .2s linear;
     padding: 14px 30px;
     background: transparent;
+    display: inline-block;
 }
 .btn-small:hover{
     background: #112440;
