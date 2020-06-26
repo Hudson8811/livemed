@@ -1,6 +1,7 @@
 extends layout
 block variables
   - var body_class = 'white-bg'
+  - var baseHeader = true
 block content
   section.as-1(style="background-image:url(/new/images/about-img-1.jpg);")
     header.header.container.white-header
@@ -116,4 +117,4 @@ block content
     .as-6__inner(style="background-image:url(/new/images/about-img-2.jpg);")
       .as-6__content
         .as-6__title.h2 Connect with a live doctor when you need it most
-        .as-6__btn.btn Connect with a Doctor
+        .as-6__btn.btn.invert Connect with a Doctor

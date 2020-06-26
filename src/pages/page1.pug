@@ -6,6 +6,8 @@ block content
 		.h-section-1__inner
 			.h-section-1__content
 				h1.h1 Virtual health care, made simple and affordable
+				.h-section-1__image-mobile
+					img(src="/new/images/homepage-pic-1.png" alt="")
 				.h-section-1__text Connect with a live doctor when you need it most.
 				.h-section-1__btns
 					a.btn(href="") Connect to a Doctor
@@ -16,14 +18,14 @@ block content
 						</svg>
 						| How it Works
 			.h-section-1__image
-				img(src="/new/images/home-first-img.svg" alt="")
+				img(src="/new/images/homepage-pic-1.png" alt="")
 
 	section.container.h-section-2
 		.h-section-2__inner
 			.h-section-2__item
 				.h-section-2__img
 					img(src="/new/images/icon-home-lock.svg" alt="")
-				.h-section-2__title.h4 Security you can <br>afford
+				.h-section-2__title.h4 Security you can #[br.dd]afford
 				.h-section-2__text.p Get the assurance you need without unnecessary and expensive doctor appointments.
 			.h-section-2__item
 				.h-section-2__img
@@ -33,7 +35,7 @@ block content
 			.h-section-2__item
 				.h-section-2__img
 					img(src="/new/images/icon-home-home.svg" alt="")
-				.h-section-2__title.h4 Stay home, stay <br>safe
+				.h-section-2__title.h4 Stay home, stay #[br.dd]safe
 				.h-section-2__text.p Stay home and avoid crowded offices full of contagious people who are unwell.
 			.h-section-2__item
 				.h-section-2__img
@@ -89,7 +91,7 @@ block content
 							| Ask a Question
 							<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 18L15.5 12L9.5 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 
-	section.container.h-section-5
+	section.container.container-t2.h-section-5
 		.h-section-5__inner
 			.h-section-5__title.h2.center Interested in telemedicine? <br>Learn more about LiveMedConnect
 
@@ -118,28 +120,60 @@ block content
 			.container.container-t2
 				.tmnews-top
 					a.tmnews-top__all(href="") Read All
-			.tmnews-slider-wrap
-				.tmnews-slider.js-tmnews-slider
-					a.tmnews-slide(href="")
-						.tmnews-slide__pic
-							img(src="https://via.placeholder.com/150", alt="")
-						.tmnews-slide__title How 'telehealth' may replace doctor visits in major cities amid a shortage of physicians
-						.tmnews-slide__sub yahoo.com - Trent Gillies
-					a.tmnews-slide(href="")
-						.tmnews-slide__pic
-							img(src="", alt="")
-						.tmnews-slide__title When there's a hurricane between you and the hospital, telemedicine could save the day
-						.tmnews-slide__sub Popular Science - Marlene Cimons
-					a.tmnews-slide(href="")
-						.tmnews-slide__pic
-							img(src="", alt="")
-						.tmnews-slide__title Virtual doctor visits are getting more popular, but questions remain about who pays
-						.tmnews-slide__sub The Washington Post - Steven Findlay
-					a.tmnews-slide(href="")
-						.tmnews-slide__pic
-							img(src="", alt="")
-						.tmnews-slide__title Telemedicine opening doors to specialty care for inmates
-						.tmnews-slide__sub salon.com - Michelle Andrews
+					.tmnews-arrows
+						#tmnews-arrow--prev.tmnews-arrow.tmnews-arrow--prev.slick-arrow(style='')
+							svg(width='48' height='24' viewbox='0 0 48 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(d='M41 12H7' stroke='#DEE2E9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+								path(d='M14 5L7 12L14 19' stroke='#DEE2E9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+						#tmnews-arrow--next.tmnews-arrow.tmnews-arrow--next.slick-arrow(style='')
+							svg(width='48' height='24' viewbox='0 0 48 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(d='M7 12H41' stroke='#112440' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+								path(d='M34 5L41 12L34 19' stroke='#112440' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+			.container.container-slider
+				.tmnews-slider-wrap
+					.tmnews-slider.js-tmnews-slider
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="https://via.placeholder.com/150/FF0000", alt="")
+							.tmnews-slide__title How 'telehealth' may replace doctor visits in major cities amid a shortage of physicians
+							.tmnews-slide__sub yahoo.com - Trent Gillies
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="", alt="")
+							.tmnews-slide__title When there's a hurricane between you and the hospital, telemedicine could save the day
+							.tmnews-slide__sub Popular Science - Marlene Cimons
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="", alt="")
+							.tmnews-slide__title Virtual doctor visits are getting more popular, but questions remain about who pays
+							.tmnews-slide__sub The Washington Post - Steven Findlay
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="", alt="")
+							.tmnews-slide__title Telemedicine opening doors to specialty care for inmates
+							.tmnews-slide__sub salon.com - Michelle Andrews
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="https://via.placeholder.com/150/FF0000", alt="")
+							.tmnews-slide__title How 'telehealth' may replace doctor visits in major cities amid a shortage of physicians
+							.tmnews-slide__sub yahoo.com - Trent Gillies
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="", alt="")
+							.tmnews-slide__title When there's a hurricane between you and the hospital, telemedicine could save the day
+							.tmnews-slide__sub Popular Science - Marlene Cimons
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="", alt="")
+							.tmnews-slide__title Virtual doctor visits are getting more popular, but questions remain about who pays
+							.tmnews-slide__sub The Washington Post - Steven Findlay
+						a.tmnews-slide(href="")
+							.tmnews-slide__pic
+								img(src="", alt="")
+							.tmnews-slide__title Telemedicine opening doors to specialty care for inmates
+							.tmnews-slide__sub salon.com - Michelle Andrews
+
+
 
 	section.schedule-first-visit-section
 		.container.container--scfivi
@@ -147,9 +181,9 @@ block content
 				.scfivi-flex__text
 					h2.scfivi__title Schedule your first video visit
 					.scfivi_desc Rest assured, we got you covered.
-					a.button.btn--scfivi-connect(href="") Connect to a Doctor
+					a.btn.btn--scfivi-connect(href="") Connect to a Doctor
 				.scfivi-flex__phone
-					img(src="", alt="")
+					img(src="new/images/first-visit-pic.png", alt="")
 
 
 	.container
@@ -157,8 +191,9 @@ block content
 			.subscribe-sec-inner
 				.subscribe-sec-inner__left
 					.subscribe-sec-title Keep your fingers on the pulse
-					.subscribe-sec-description Subscribe to our Weekly Digest to be informed about our latest deals and news.
+					.subscribe-sec-description Subscribe to our Weekly Digest to be informed#[br] about our latest deals and news.
 				.subscribe-sec-inner__right
-					.subscribe-input-text-wrap
-						input.subscribe-inp-email(type="text", name="" placeholder="Email address")
+					.input-text-wrap.subscribe-input-text-wrap
+						img.input-text-pic(src="new/images/mail.svg", alt="")
+						input.subscribe-inp-email.textinp(type="text", name="" placeholder="Email address")
 					button.btn.subscribe-btn-submit Join
