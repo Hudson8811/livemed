@@ -456,7 +456,7 @@
     }
 }
 
-.as-6 {
+.banner-text-btn {
     margin-top: 24px;
 
     @media screen and (max-width: 600px) {
@@ -466,16 +466,18 @@
 
     &__inner {
         border-radius: 8px;
-        padding: 188px 126px 124px;
+        padding: 188px 126px 80px;
         box-sizing: border-box;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         overflow: hidden;
+        min-height: 720px;
 
         @media screen and (max-width: 768px) {
-            padding: 240px 24px 80px;
+            padding: 240px 24px 48px;
+            min-height: 572px;
         }
 
         @media screen and (max-width: 600px) {
@@ -501,9 +503,13 @@
     }
 
     &__content {
-        max-width: 361px;
+        max-width: 461px;
         position: relative;
         z-index: 2;
+
+        &.w361 {
+            max-width: 361px;
+        }
     }
 
     &__title {
