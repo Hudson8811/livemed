@@ -74,6 +74,12 @@ body.gray_bg{
 .btn:hover{
     background: #112440;
 }
+.btn.invert{
+    background: #112440;
+}
+.btn.invert:hover{
+    background: #00AED5;
+}
 
 .btn-small{
     font-weight: 500;
@@ -219,6 +225,25 @@ body.gray_bg{
     color: #00AED5;
 }
 
+.white-header {
+    color: #ffffff;
+}
+.white-header .header__menu a{
+    color: #ffffff;
+}
+.white-header .header__menu a:hover{
+    color: #00AED5;
+}
+.white-header .btn-small{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.white-header .header__login{
+    color: #FFFFFF;
+}
+.white-header .header__login:hover{
+    color: #00AED5;
+}
 
 .footer{
     padding: 24px;

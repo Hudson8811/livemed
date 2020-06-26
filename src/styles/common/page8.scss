@@ -109,6 +109,10 @@
     background-repeat: no-repeat;
     margin-bottom: 27px;
 
+    @media screen and (max-width: 768px) {
+        height: 578px;
+    }
+
     &::before {
         content: "";
         display: block;
@@ -125,15 +129,28 @@
         position: relative;
         z-index: 2;
         margin-top: 120px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 48px;
+        }
     }
 
     &__title {
         color: #ffffff;
+
+        @media screen and (max-width: 768px) {
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 
     &__subtitle {
         color: #ffffff;
         margin-bottom: 32px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
     }
 }
 
@@ -142,12 +159,20 @@
     z-index: 2;
     margin-bottom: 27px;
 
+    @media screen and (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+
     &__video {
         position: relative;
         background: #DEE2E9;
         border-radius: 8px;
         max-width: 752px;
         margin: -121px auto 0;
+
+        @media screen and (max-width: 768px) {
+            margin-top: -58px;
+        }
 
         video {
             width: 100%;
@@ -159,6 +184,10 @@
     &__text {
         max-width: 752px;
         margin: 80px auto 0;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 48px;
+        }
     }
 }
 
@@ -172,11 +201,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 1000px) {
+            padding: 120px 24px 72px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 80px 24px 32px;
+        }
     }
 
     &__content {
         color: #ffffff;
         display: flex;
+        flex-wrap: wrap;
         width: 1164px;
         max-width: 100%;
         justify-content: center;
@@ -186,10 +224,30 @@
         width: 33%;
         box-sizing: border-box;
         padding: 0 12px;
+
+        @media screen and (max-width: 1000px) {
+            width: 50%;
+            margin-bottom: 48px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        @media screen and (max-width: 768px) {
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 
     &__text {
         margin-top: 48px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 24px;
+        }
     }
 }
 
@@ -200,7 +258,11 @@
     &__inner {
         background-color: #00aed5;
         border-radius: 8px;
-        padding: 180px 24px;
+        padding: 180px 24px 132px;
+
+        @media screen and (max-width: 768px) {
+            padding: 80px 24px 32px;
+        }
     }
 
     &__content {
@@ -211,11 +273,18 @@
 
     &__title {
         margin-bottom: 152px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 80px;
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 
     &__flex {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -225,6 +294,11 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 48px;
+        box-sizing: border-box;
+        @media screen and (max-width: 1000px) {
+            width: 33.33333%;
+        }
     }
 
     &__text {
@@ -244,11 +318,22 @@
         background-color: #f4f5f8;
         border-radius: 8px;
         padding: 180px 24px;
+
+        @media screen and (max-width: 768px) {
+            padding: 80px 24px;
+        }
     }
 
     &__content {
         max-width: 752px;
         margin: 0 auto;
+    }
+
+    &__title {
+        @media screen and (max-width: 768px) {
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 
     &__subtitle {
@@ -258,10 +343,18 @@
         text-align: center;
         color: #112440;
         margin-top: 48px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 24px;
+        }
     }
 
     &__plans {
         margin-top: 80px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 48px;
+        }
     }
 }
 
@@ -297,7 +390,7 @@
         z-index: 2;
     }
 
-    &__title{
+    &__title {
         color: #ffffff;
     }
 
@@ -305,3 +398,5 @@
         margin-top: 80px;
     }
 }
+
+
