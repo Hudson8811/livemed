@@ -5,7 +5,9 @@ block content
 	section.container.h-section-1
 		.h-section-1__inner
 			.h-section-1__content
-				h1.h1 Virtual health care, made simple and affordable
+				h1.h1
+					span.dd Virtual health care, made simple and affordable
+					span.dm Healthcare, made simple and affordable
 				.h-section-1__image-mobile
 					img(src="/new/images/homepage-pic-1.png" alt="")
 				.h-section-1__text Connect with a live doctor when you need it most.
@@ -47,7 +49,11 @@ block content
 		.h-section-3__inner.container
 			.h-section-3__content
 				.h-section-3__title.h2.center Convenient and <br>reliable healthcare
-				.h-section-3__subtitle.center Let us help you feel better. Discover telehealth services.
+				.h-section-3__subtitle.center
+					span.dd Let us help you feel better. Discover telehealth services.
+					span.dm The best part that the doctor conlust is free
+
+
 				.h-section-3__video
 					video(poster="/new/images/video-bg.png" )
 						source(src="//s3.us-east-2.amazonaws.com/livemedconnect/video-home.webm" type="video/webm")
@@ -179,14 +185,16 @@ block content
 		.container.container--scfivi
 			.scfivi-flex
 				.scfivi-flex__text
-					h2.scfivi__title Schedule your first video visit
+					h2.h2.scfivi__title Schedule your first video visit
 					.scfivi_desc Rest assured, we got you covered.
+					.scfivi-flex__phone--mob
+						img(src="new/images/first-visit-pic.png", alt="")
 					a.btn.btn--scfivi-connect(href="") Connect to a Doctor
 				.scfivi-flex__phone
 					img(src="new/images/first-visit-pic.png", alt="")
 
 
-	.container
+	.container.subscribe-section-continer
 		.subscribe-section
 			.subscribe-sec-inner
 				.subscribe-sec-inner__left

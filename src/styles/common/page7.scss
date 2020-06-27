@@ -1,0 +1,154 @@
+.contact-section {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 300px;
+
+  .container {}
+}
+
+.contact-flex {
+  margin-top: 120px;
+  display: flex;
+
+  &__left {
+    max-width: calc(100% - 461px - 90px);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__right {
+    width: 461px;
+    margin-left: 90px;
+  }
+
+  form {
+    margin-top: 48px;
+  }
+
+  .input-text-wrap+.input-text-wrap {
+    margin-top: 48px;
+  }
+
+}
+
+
+.contact-flex__pic-wrap {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+}
+
+.contact-flex__pic {
+  width: 494px;
+  max-width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.contact-flex__art {
+  position: absolute;
+
+  z-index: 1;
+}
+
+.contact-flex__art--1 {
+  top: -10%;
+  left: -23.68%;
+  width: 82.591%;
+}
+
+.contact-flex__art--2 {
+  left: 32px;
+  bottom: 140px;
+  width: 13.96%;
+}
+
+.contact-flex__art--3 {
+  right: -20.85%;
+  bottom: -83px;
+  width: 89.8785%;
+}
+
+.contacts-page-title {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1.12;
+}
+
+.contacts-page-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
+.btn-contacts-want {
+  margin-top: 48px;
+}
+
+
+
+
+@media screen and (min-width:1000px) {
+  .input-text-pic-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width:999px) {
+  .contact-flex__left {
+    display: none;
+  }
+
+  .contact-flex {
+    justify-content: center;
+    margin-top: 48px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-text-wrap {
+      width: 100%;
+    }
+  }
+
+  .contact-flex__right {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .contact-section {
+    padding-bottom: 120px;
+  }
+
+  .contact-flex .input-text-wrap+.input-text-wrap {
+    margin-top: 24px;
+  }
+
+  .contacts-page-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .contacts-page-description {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-flex__pic-mobile {
+    width: 223px;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-top: 48px;
+  }
+  .btn-contacts-want{
+      width: 279px;
+      max-width: 100%;
+  }
+}

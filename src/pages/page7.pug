@@ -7,17 +7,33 @@ block content
 			.contact-flex
 				.contact-flex__left
 					.contact-flex__pic-wrap
-						img.contact-flex__pic(src="", alt="")
-						img.contact-flex__art-1(src="", alt="")
-						img.contact-flex__art-2(src="", alt="")
-						img.contact-flex__art-3(src="", alt="")
+						img.contact-flex__pic(src="new/images/contacts-pic.png", alt="")
+						img.contact-flex__art.contact-flex__art--1(src="new/images/contacts-art-1.svg", alt="")
+						img.contact-flex__art.contact-flex__art--2(src="new/images/contacts-art-2.svg", alt="")
+						img.contact-flex__art.contact-flex__art--3(src="new/images/contacts-art-3.svg", alt="")
 
 				.contact-flex__right
 					h1.contacts-page-title Let’s talk
-					.contacts-page-description 	Access the care you need from anywhere whether you are at home or traveling. Save time and money by avoiding unnecessary and expensive emergency room or urgent care visits. Get the peace of mind that you have a Doctor on call 24/7. Contact us now to learn more. Someone from our team will get back to you as soon as possible.
+					.contacts-page-description
+						span.dd Access the care you need from anywhere whether you are at home or traveling. Save time and money by avoiding unnecessary and expensive emergency room or urgent care visits. Get the peace of mind that you have a Doctor on call 24/7. Contact us now to learn more. Someone from our team will get back to you as soon as possible.
+						span.dm Please describle shortly your  question or inquiry and we will reply as as fast as we can. Thank you!
+						img.contact-flex__pic-mobile(src="new/images/contacts-pic.png", alt="")
 					form(action="")
-						input.textinp(type="text", name="" placeholder="Your Name")
-						input.textinp(type="text", name="" placeholder="Email Address")
-						input.textinp(type="text", name="" placeholder="Phone Number")
-						textarea.textinp.textinp--textarea(name="", cols="30", rows="10" placeholder="Your Message")
-						button.btn I want to chat
+
+						.input-text-wrap.input-text-wrap--gray
+							img.input-text-pic(src="new/images/inp-user-gray.svg", alt="")
+							input.textinp.textinp--gray(type="text", name=""  placeholder="Your Name")
+
+						.input-text-wrap.input-text-wrap--gray
+							img.input-text-pic(src="new/images/inp-mail-gray.svg", alt="")
+							input.textinp.textinp--gray(type="text", name=""  placeholder="Email Address")
+
+						.input-text-wrap.input-text-wrap--gray
+							img.input-text-pic(src="new/images/inp-phone-gray.svg", alt="")
+							input.textinp.textinp--gray(type="text", name=""  placeholder="Phone Number")
+
+						.input-text-wrap.input-text-wrap--gray
+							img.input-text-pic(src="new/images/inp-message-gray.svg", alt="")
+							textarea.textinp.textinp--gray.textinp--textarea.js-autosize-textarea(name="", cols="30", rows="10" placeholder="Your Message")
+
+						button.btn.btn-contacts-want I want to chat
