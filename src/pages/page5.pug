@@ -2,7 +2,121 @@ extends layout
 block variables
 	- var body_class = 'gray_bg'
 block content
-	section
-		.container register
+	section.register-section
+		.container.container--register
+			.reg-main
+				h1.login-h1 Hello there!
+				.login-sub-heading Tell us about yourself
+				.register-block
+					.register-block-top
+						.register-steps-progbar
+							.register-steps-progbar__finished(style="width:50%;")
+						.register-steps-progtext Step 1 of 2
+					.register-steps-wrap
+						.register-step.register-step--1
+							label.custom-toggle2-wrap.custom-toggle2-wrap
+								input.custom-toggle2(type="checkbox", name="")
+								.custom-toggle2-handler
+
+							.flex-inputs
+								label.input-text-wrap.input-text-wrap--gray.iw-c50
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder First Name
+								label.input-text-wrap.input-text-wrap--gray.iw-c50
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Last Name
+
+							.flex-inputs
+								label.input-text-wrap.input-text-wrap--gray.iw-c50
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Email Address
+								label.input-text-wrap.input-text-wrap--gray.iw-c50
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Primary Phone
+
+							.flex-inputs
+								label.input-text-wrap.input-text-wrap--gray.iw-c75
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Street Address
+								label.input-text-wrap.input-text-wrap--gray.iw-c25
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Apr / Suite #
+
+							.flex-inputs
+								label.input-text-wrap.input-text-wrap--gray.iw-c50-3
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder City
+								label.iw-c25-3
+									select.js-custom-select(name="State" data-placeholder="State"
+data-minimum-results-for-search="0")
+										option(value="")
+										option(value="1") State 1
+										option(value="2") State 2
+										option(value="3") State alabama
+
+								label.input-text-wrap.input-text-wrap--gray.iw-c25-3
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Zip Code
+
+							.flex-inputs
+								label.input-text-wrap.input-text-wrap--gray.iw-c50
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Date of Birth
+								.iw-c50
+									select.js-custom-select(name="gender" data-placeholder="Gender")
+										option(value="")
+										option(value="m") Male
+										option(value="f") Female
 
 
+
+
+							.flex-inputs.flex-inputs-toggle
+								.flex-inputs-toggle__text Do you have a Primary Care Physician?
+								.flex-inputs-toggle__wrap
+									label.custom-toggle2-wrap.custom-toggle2-wrap--yn
+										input.custom-toggle2(type="checkbox" checked, name="")
+										.custom-toggle2-active__bg
+											span Yes
+										.custom-toggle2-inactive__bg
+											span No
+										.custom-toggle2-handler
+
+							.flex-inputs
+								label.input-text-wrap.input-text-wrap--gray.iw-c50
+									input.textinp.textinp--no-pic.textinp--gray(required type="text", name="")
+									span.textinp-top-placeholder Primary Care Physician Name
+
+							.flex-inputs.flex-inputs-toggle
+								.flex-inputs-toggle__text Do you have Health Insurance?
+								.flex-inputs-toggle__wrap
+									label.custom-toggle2-wrap.custom-toggle2-wrap--yn
+										input.custom-toggle2(type="checkbox", name="")
+										.custom-toggle2-active__bg
+											span Yes
+										.custom-toggle2-inactive__bg
+											span No
+										.custom-toggle2-handler
+
+							.flex-inputs
+								.iw-c50
+									select.js-custom-select(name="Preferred Language" data-placeholder="Preferred Language")
+										option(value="")
+										option(value="Preferred Language 1") Preferred Language 1
+										option(value="Preferred Language 2") Preferred Language 2
+						.register-step.register-step--2
+
+				.reg-thank-pic
+					img(src="new/images/login-pic.png", alt="")
+				.reg-thank-title Thank you!
+				.reg-thank-text
+					p We’ve sent email on
+						a(href="mailto:johnsmith@example.com") johnsmith@example.com
+						| .
+					p Please check your inbox.
+				.reg-thank-sub If you have any questions, please contact us
+					| at +1 (833)
+					a(href="") 4Live-MD
+					| or
+					a(href="") email
+					| us.

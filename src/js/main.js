@@ -1,8 +1,11 @@
 //=require './jquery-3.5.1.min.js'
 //=require './slick.js'
+//=require './select2.full.min.js'
 //=require './autosize.min.js'
+
 //=require './page1.js'
 //=require './page8.js'
+//=require './page5.js'
 
 
 $(document).ready(function () {

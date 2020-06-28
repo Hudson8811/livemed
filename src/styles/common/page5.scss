@@ -1,0 +1,246 @@
+.custom-toggle2-wrap {
+  position: relative;
+  display: block;
+  height: 32px;
+  border-radius: 100px;
+  cursor: pointer;
+
+  background: #00AED5;
+  width: 56px;
+
+  &--yn {
+    width: 80px;
+
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    .custom-toggle2-active__bg {
+
+      background: #A0D900;
+      color: #FFFFFF;
+
+    }
+
+    .custom-toggle2-inactive__bg {
+      background: #DEE2E9;
+    }
+
+    .custom-toggle2-handler {
+      transition-duration: .5s;
+    }
+  }
+
+}
+
+.custom-toggle2-handler {
+  position: absolute;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  top: 4px;
+  transition-duration: .3s;
+  left: 4px;
+}
+
+.custom-toggle2 {
+  display: none;
+
+}
+
+.custom-toggle2:checked {
+  &~.custom-toggle2-active__bg {
+    opacity: 1;
+  }
+
+  &~.custom-toggle2-inactive__bg {
+    opacity: 0;
+  }
+
+  &~.custom-toggle2-handler {
+    left: calc(100% - 28px)
+  }
+}
+
+.custom-toggle2:not(:checked) {
+  &~.custom-toggle2-active__bg {
+    opacity: 0;
+  }
+
+  &~.custom-toggle2-inactive__bg {
+    opacity: 1;
+  }
+
+  &~.custom-toggle2-handler {
+    left: 4px;
+  }
+}
+
+.custom-toggle2-active__bg,
+.custom-toggle2-inactive__bg {
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 100px;
+  opacity: 0;
+  transition-duration: .5s;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+
+.custom-toggle2-active__bg {
+  left: 0;
+}
+
+.custom-toggle2-inactive__bg {
+  right: 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.register-block {
+  margin-top: 87px;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(100, 109, 134, 0.1);
+  border-radius: 8px;
+}
+
+
+
+.register-thank {
+  display: none;
+}
+
+
+.register-block {}
+
+.register-block-top {}
+
+.register-steps-progbar {}
+
+.register-steps-progbar__finished {}
+
+.register-steps-progtext {}
+
+.register-steps-wrap {}
+
+.register-step {}
+
+.custom-toggle2-wrap {}
+
+.custom-toggle2 {}
+
+.custom-toggle2-handler {}
+
+.flex-inputs {
+  display: flex;
+  justify-content: space-between;
+
+  &+.flex-inputs {
+    margin-top: 48px;
+  }
+}
+
+.iw-c50 {
+  width: calc(50% - 12px);
+}
+
+.iw-c75 {
+  width: calc(75% - 12px);
+}
+
+.iw-c25 {
+  width: calc(25% - 12px);
+}
+
+.iw-c50-3 {
+  width: calc(50% - 16px);
+}
+
+.iw-c25-3 {
+  width: calc(25% - 16px);
+}
+
+.select2.select2-container {
+  &--default {
+    width: 100% !important;
+
+
+    .select2-selection {
+      &--single {
+        border-radius: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 60px;
+        transition-duration: .3s;
+        color: #fff;
+        border: 0;
+        border-bottom: 1px solid #aab0be;
+        outline: 0;
+        background: 0 0;
+        box-shadow: none;
+
+        .select2-selection__placeholder {
+          color: #646d86;
+
+        }
+
+        .select2-selection__rendered {
+          color: #112440;
+          line-height: 1.5;
+
+          font-size: 16px;
+          font-weight: 400;
+          font-style: normal;
+          padding: 0;
+        }
+        .select2-selection__arrow{
+            width: 24px;
+            height: 24px;
+            background:url(../images/select-arrow.svg);
+            transition-duration: .3s;
+            top: 18px;
+            right: 0;
+            b{
+                display: none;
+            }
+        }
+      }
+
+    }
+  }
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow{
+    transform: rotate(180deg);
+}
+.flex-inputs-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.flex-inputs-toggle__text {
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-right: 15px;
+  color: #112440;
+}
