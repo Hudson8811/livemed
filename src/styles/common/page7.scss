@@ -90,9 +90,12 @@
 
 
 
-
 @media screen and (min-width:1000px) {
   .input-text-pic-mobile {
+    display: none;
+  }
+
+  .contact-flex__pic-mobile{
     display: none;
   }
 }
