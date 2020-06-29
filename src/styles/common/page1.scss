@@ -779,6 +779,7 @@
   font-style: normal;
   line-height: 24px;
   line-height: 1.5;
+  line-height: 1.1;
 }
 
 
@@ -1125,6 +1126,24 @@
     br {
       display: none;
     }
+  }
+
+  .scfivi{
+    text-align: center;
+  }
+  .scfivi-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .scfivi-flex__text{
+    max-width: 100%;
+  }
+  .scfivi-flex__text, .scfivi_desc{
+    text-align: center;
+  }
+  .scfivi-flex__phone--mob, .btn--scfivi-connect{
+    margin-top: 48px;
   }
 }
 

@@ -31,7 +31,7 @@ if ($('.as-2__video').length > 0) {
 $(document).ready(function(){
     plansSlider = undefined;
     if ($(window).width() <= 768)
-        plansSlider = $('.plans').slick({
+        plansSlider = $('.js-plans').slick({
             arrows: false,
             dots: true,
         });
@@ -39,14 +39,14 @@ $(document).ready(function(){
     $(window).on('resize', function(){
         if ($(window).width() <= 768){
             if (!plansSlider) {
-                plansSlider = $('.plans').slick({
+                plansSlider = $('.js-plans').slick({
                     arrows: false,
                     dots: true,
                 });
             }
         } else {
             if (plansSlider) {
-                $('.plans').slick('unslick');
+                $('.js-plans').slick('unslick');
                 plansSlider = undefined;
             }
         }
