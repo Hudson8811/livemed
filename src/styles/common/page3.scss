@@ -12,3 +12,29 @@
         margin-top: 120px;
     }
 }
+
+.scfivi-flex--plan{
+justify-content: space-between;
+padding-bottom: 180px;
+}
+
+@media screen and (max-width: 999px) {
+    .scfivi-flex--plan{
+        padding-bottom: 80px;
+    }
+    .plans.ps-1__plans--pricing{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        .plan{
+            width: 100%;
+            &+.plan{
+                margin-top: 24px;
+            }
+        }
+        .plan__price{
+            margin-top: 48px;
+        }
+    }
+
+}
