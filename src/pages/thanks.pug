@@ -1,0 +1,17 @@
+extends layout
+block variables
+    - var body_class = 'gray_bg'
+block content
+    section.register-section
+        .container.container--register
+            .reg-main.reg-main--thanks
+                .reg-thank-pic
+                    img(src="new/images/login-pic.png", alt="")
+                .reg-thank-title Thank you!
+                .reg-thank-text
+                    p We’ve sent email on
+                        a(href="mailto:johnsmith@example.com")  johnsmith@example.com
+                        | .
+                    p Please check your inbox.
+                .reg-thank-sub If you have any questions, please contact us
+                    | at +1 (833) 4Live-MD or #[a(href="mailto:support@livemedconnect.com") email]  us.

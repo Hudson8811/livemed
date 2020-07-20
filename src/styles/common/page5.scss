@@ -167,7 +167,7 @@
 }
 
 .register-steps-wrap {
-  width: 752px;
+  width: 776px;
   max-width: 100%;
   margin-top: 80px;
 }
@@ -206,6 +206,11 @@
 
   &--aic {
     align-items: center;
+  }
+
+  &--select-plan{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -376,8 +381,8 @@
 .flex-inputs--select-plan {}
 
 .reg-selectable-plan {
-  width: calc(50% - 12px);
-  padding: 48px;
+  width: calc(50% - 24px);
+  padding: 48px 24px;
   box-sizing: border-box;
   display: block;
 
@@ -387,6 +392,7 @@
   border: 1px solid #DEE2E9;
   box-shadow: 0px 4px 4px rgba(0, 20, 50, 0.1);
   border-radius: 2px;
+  margin: 0 12px 24px;
 
 }
 
@@ -455,7 +461,7 @@
 
   &:checked+.reg-selectable-plan {
     border: 2px solid #00AED5;
-    padding: 47px;
+    padding: 47px 23px;
 
     .reg-selectplan-top {}
 
@@ -537,7 +543,7 @@
 
 /*-------------------------------------------------*/
 
-.reg-main--thanks.reg-main--active {
+.reg-main--thanks {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -689,13 +695,6 @@
 
   .flex-inputs--select-plan {}
 
-  .reg-selectable-plan {
-    width: 100%;
-
-    &+.reg-selectable-plan__radio+.reg-selectable-plan {
-      margin-top: 24px;
-    }
-  }
 
   .reg-selectable-plan {
     padding: 24px;
@@ -781,6 +780,13 @@
 
   .reg-thank-text{
     margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reg-selectable-plan {
+    width: 100%;
+    margin: 0 0 24px;
   }
 }
 

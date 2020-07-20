@@ -2,6 +2,24 @@ extends layout
 block variables
 	- var body_class = 'gray_bg'
 block content
+	section.container.p-section-1
+		.p-section-1__inner
+			.p-section-1__image
+				img(src="/new/images/news-banner.jpg" alt="")
+
+			.p-section-1__content
+				h1.h1.p-section-1__title
+					span Peace of mind that break the bank
+				.p-section-1__text Connect with a live doctor when you need it most.
+				.p-section-1__btns
+					a.btn(href="") Connect to a Doctor
+					a.p-section-1__how-btn.svg-link--stroke
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M10 8L16 12L10 16V8Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						| How it Works
+
 	section.pagetitle
 		.pagetitle__blue-text.center Pricing
 		h1.pagetitle__title.h1.center Peace of mind that doesn’t break the bank
@@ -10,26 +28,34 @@ block content
 		.ps-1__content
 			.ps-1__plans.plans.ps-1__plans--pricing
 				.plan
+					.plan__title.plan__title--red
+						img(src="/new/images/icon-plan-individual.svg" alt="")
+						| One Time Consultation
+					.plan__price
+						span.h3 $65.00
+					.plan__text.p.center Consultations #[br] for One (no co-pay)
+					a(href="/registration?plan=1").plan__btn.btn-small One Time Payment Option
+				.plan
 					.plan__title.plan__title--blue
 						img(src="/new/images/icon-plan-individual.svg" alt="")
-						| Individual plan
+						| Individual Plan
 					.plan__price
 						span.h3 $24.95/mo
-					.plan__text.p.center Consultations <br>for One
-					a(href="").plan__btn.btn-small Select This Monthly Plan
+					.plan__text.p.center Consultations #[br] for One
+					a(href="/registration?plan=2").plan__btn.btn-small Select This Monthly Plan
 				.plan
 					.plan__title.plan__title--green
-						img(src="/new/images/icon-plan-individual.svg" alt="")
+						img(src="/new/images/icon-plan-family.svg" alt="")
 						| Family plan
 					.plan__price
 						span.red.h4 $39.95
 						span.h3 $29.95/mo
 					.plan__text.p.center Consultations for Family <br>up to 5 Members
-					a(href="").plan__btn.btn-small Select This Monthly Plan
+					a(href="/registration?plan=3").plan__btn.btn-small Select This Monthly Plan
 			.ps-5__list.checklist
 				.checklist__item Unlimited Medical Consultations — 24/7/365 Nationwide Doctor Access
 				.checklist__item Prescriptions sent to pharmacy of choice electronically*
-				.checklist__item Mental Health Specialists 24/7/365 Access to Master Level Therapist
+				.checklist__item Mental Health Specialists 24/7/365 Access to Master Level Counselor
 				.checklist__item Care Navigation Advocates
 				.checklist__item Message a Specialist — Consult with specialist via Secure Messaging
 
@@ -42,6 +68,6 @@ block content
 					.scfivi_desc Rest assured, we got you covered.
 					.scfivi-flex__phone--mob
 						img(src="new/images/first-visit-pic.png", alt="")
-					a.btn.btn--scfivi-connect(href="") Connect to a Doctor
+					a.btn.btn--scfivi-connect(href="/pricing") Connect to a Doctor
 				.scfivi-flex__phone
 					img(src="new/images/first-visit-pic.png", alt="")

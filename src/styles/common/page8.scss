@@ -8,7 +8,7 @@
     width: 100%;
     justify-content: space-between;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 999px) {
         padding-bottom: 48px;
     }
 
@@ -69,7 +69,7 @@
     background: #ffffff;
     box-shadow: 0 4px 4px rgba(100, 109, 134, 0.1);
     border-radius: 8px;
-    width: calc(50% - 12px);
+    width: calc(33.3333% - 12px);
     box-sizing: border-box;
 
     &__title {
@@ -96,6 +96,10 @@
 
         &--green {
             background-color: #a0d900;
+        }
+
+        &--red {
+            background-color: #ff4c77;
         }
 
         img {
@@ -131,6 +135,8 @@
 }
 
 .checklist {
+    max-width: 752px;
+    margin: 0 auto;
     margin-top: 80px;
 
     @media screen and (max-width: 768px) {
@@ -418,7 +424,7 @@
     }
 
     &__content {
-        max-width: 752px;
+        max-width: 1140px;
         margin: 0 auto;
     }
 

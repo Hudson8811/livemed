@@ -30,14 +30,14 @@ if ($('.as-2__video').length > 0) {
 
 $(document).ready(function(){
     plansSlider = undefined;
-    if ($(window).width() <= 768)
+    if ($(window).width() <= 999)
         plansSlider = $('.js-plans').slick({
             arrows: false,
             dots: true,
         });
 
     $(window).on('resize', function(){
-        if ($(window).width() <= 768){
+        if ($(window).width() <= 999){
             if (!plansSlider) {
                 plansSlider = $('.js-plans').slick({
                     arrows: false,

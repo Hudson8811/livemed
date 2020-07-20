@@ -110,22 +110,30 @@ block content
         .as-5__subtitle.center Choose a monthly plan
         .as-5__plans.plans.js-plans
           .plan
+            .plan__title.plan__title--red
+              img(src="/new/images/icon-plan-individual.svg" alt="")
+              | One Time Consultation
+            .plan__price
+              span.h3 $65.00
+            .plan__text.p.center Consultations #[br] for One (no co-pay)
+            a(href="/registration?plan=1").plan__btn.btn-small One Time Payment Option
+          .plan
             .plan__title.plan__title--blue
               img(src="/new/images/icon-plan-individual.svg" alt="")
-              | Individual plan
+              | Individual Plan
             .plan__price
               span.h3 $24.95/mo
-            .plan__text.p.center Consultations <br>for One
-            a(href="").plan__btn.btn-small Select This Monthly Plan
+            .plan__text.p.center Consultations #[br] for One
+            a(href="/registration?plan=2").plan__btn.btn-small Select This Monthly Plan
           .plan
             .plan__title.plan__title--green
-              img(src="/new/images/icon-plan-individual.svg" alt="")
+              img(src="/new/images/icon-plan-family.svg" alt="")
               | Family plan
             .plan__price
               span.red.h4 $39.95
               span.h3 $29.95/mo
             .plan__text.p.center Consultations for Family <br>up to 5 Members
-            a(href="").plan__btn.btn-small Select This Monthly Plan
+            a(href="/registration?plan=3").plan__btn.btn-small Select This Monthly Plan
         .as-5__list.checklist
           .checklist__item Unlimited Medical Consultations — 24/7/365 Nationwide Doctor Access
           .checklist__item Prescriptions sent to pharmacy of choice electronically*
